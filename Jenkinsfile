@@ -6,6 +6,6 @@ node {
         def customImage = docker.build("nodejsimage")
 
         /* Push the container to the custom Registry */
-       customImage.push(docker push dockerkubernetes1992/nodeimage:nodejsimage)
+       customImage.push('dockerkubernetes1992/nodeimage:nodejsimage')
     }
 }
