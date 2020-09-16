@@ -3,9 +3,9 @@ node {
 
     docker.withRegistry('https://registry.hub.docker.com', 'dockerhub') {
 
-        def customImage = docker.build("jenkins/jenkins")
+        def customImage = docker.build("nodejsimage/dockerwebapp")
 
         /* Push the container to the custom Registry */
-       customImage.push('dockerkubernetes1992/nodeimage:nodejsimage')
+       customImage.push()
     }
 }
